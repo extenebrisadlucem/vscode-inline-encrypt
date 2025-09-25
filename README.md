@@ -1,7 +1,16 @@
 vscode-inline-encrypt
 ==========
 
-[TOC]
+## Table of Contents  
+[Introduction](README.md#Introduction)  
+[Sponsors](README.md#Sponsors)  
+[Documentation](README.md#documentation)
+  [Installation](README.md#installation)
+  [Usage](README.md#usage)
+    [Settings](README.md#settings)
+[Changelog](README.md#changelog)
+[Licence](README.md#licence)
+
 
 ---
 
@@ -9,7 +18,7 @@ vscode-inline-encrypt
 
 &nbsp;
 
-[Français](), [English](README.md), [Español](), [简体中文](zh-cn) , [繁體中文](zh-tw) , [日本語](ja-jp)
+[Français](README.FR.md), [English](README.md), [Español](README.ES.md),[German](README.DE.md),[Dutch](README.NL.md), [简体中文](zh-cn) , [繁體中文](zh-tw) , [日本語](ja-jp)
 
 
 # Introduction
@@ -47,7 +56,7 @@ If you find it useful and want to support further development, consider:
 - Optional: bind them to custom keyboard shortcuts.  
 
 ### Settings
-You can configure:
+You must configure:
 - `inlineEncrypt.gpgPath`: Path to your `gpg` binary.  
 - `inlineEncrypt.keyId`: Default key ID to use for encryption.  
 
