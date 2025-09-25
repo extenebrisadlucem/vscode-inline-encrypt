@@ -1,0 +1,56 @@
+{
+  "name": "vscode-inline-encrypt",
+  "displayName": "VSCode Inline Encrypt",
+  "publisher": "on7aur",
+  "version": "0.0.4",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onCommand:inlineEncrypt.encrypt",
+    "onCommand:inlineEncrypt.decrypt"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "inlineEncrypt.encrypt",
+        "title": "Inline Encrypt: Encrypt Selection"
+      },
+      {
+        "command": "inlineEncrypt.decrypt",
+        "title": "Inline Encrypt: Decrypt Selection"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Inline Encrypt Settings",
+      "properties": {
+        "inlineEncrypt.gpgPath": {
+          "type": "string",
+          "default": "gpg",
+          "description": "Chemin vers le binaire GPG"
+        },
+        "inlineEncrypt.keyId": {
+          "type": "string",
+          "default": "",
+          "description": "ID de la clé à utiliser pour chiffrer/déchiffrer"
+        }
+      }
+    }
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "vscode": "^1.1.37"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/extenebrisadlucem/vscode-inline-encrypt"
+  }
+}
+
