@@ -1,3 +1,17 @@
+// # ###########################################################################################################
+// # This small project aimed to encrypt the selected text with gpg and past it on the selected text
+// #
+// # licence : CC-BY-NC-SA
+// # 
+// # credits: Add your name under if you modify the code
+// # timestamp - votre nom - version - description de votre modification
+// # 20250921 - DELFOSSE AURORE ON7AUR - 0.0.1 - Proof of concept
+// # 20250623 - DELFOSSE AURORE ON7AUR - 0.0.2 - Params in settings (path to gpg and key id)
+// # 20250624 - DELFOSSE AURORE ON7AUR - 0.0.3 - Convert \<encrypted> tags to \<div style="display: none">
+// # 20250625 - DELFOSSE AURORE ON7AUR - 0.0.4 - Documentation improvement... 
+// # 20250626 - DELFOSSE AURORE ON7AUR - 0.0.5 - Readme in french + sponsoring
+// # ###########################################################################################################
+
 import * as vscode from 'vscode';
 import { exec } from 'child_process';
 

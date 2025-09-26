@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  vscode-dev:
+    build: 
+        context: ..
+        dockerfile: docker/Dockerfile
+    image: vscode-dev
+    container_name: vscode-dev
+    volumes:
+      - ../:/workspace
+    tty: true
+
