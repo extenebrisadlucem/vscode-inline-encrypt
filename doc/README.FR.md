@@ -10,15 +10,15 @@ vscode-inline-encrypt
   - [Utilisation](#utilisation)
     - [Paramètres](#paramètres)
 - [Versions](#versions)
-- [Licence](README.md#licence)
+- [Licence](#licence)
 
 ---
 
-![demo](assets/capture.gif)
+![demo](../assets/capture.gif)
 
 &nbsp;
 
-[Français](README.FR.md), [English](README.md), [Español](README.ES.md),[German](README.DE.md),[Dutch](README.NL.md), [简体中文](zh-cn) , [繁體中文](zh-tw) , [日本語](ja-jp)
+[Français](README.FR.md), [English](../README.md), [Español](README.ES.md),[German](README.DE.md),[Dutch](README.NL.md), [简体中文](README.CN.md) , [繁體中文](README.TW.md) , [日本語](README.JP.md)
 
 
 # Introduction
@@ -39,7 +39,7 @@ Si vous le trouvez utile et souhaitez contribuer à son développement, pensez �
 -  Soumettre vos remarques et bugs
 -  Partagez
 
-[<img src="assets/don_paypal.png" width="50"/>](assets/don_paypal.png)  
+[<img src="../assets/don_paypal.png" width="50"/>](../assets/don_paypal.png)  
 
 
 ---
@@ -48,7 +48,7 @@ Si vous le trouvez utile et souhaitez contribuer à son développement, pensez �
 
 ## Installation
 
-1. Téléchargez le package `.vsix` ou installez-le directement depuis market place.
+1. [Téléchargez](https://github.com/extenebrisadlucem/vscode-inline-encrypt/releases) le package `.vsix` ou installez-le directement depuis market place.
 2. Assurez-vous d'avoir `gpg` installé sur votre système (`gpg --version`). Indiquez en le chemin dans les paramètres de l'extension.
 3. Importez ou créez une paire de clés avant d'utiliser l'extension.
 4. Renseignez la clé dans les paramètres de l'extension.
@@ -104,7 +104,7 @@ Voir [CHANGELOG.md](changelog.md) pour l'historique des versions.
 CC-BY-NC-SA -> https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-<img alt="Licence Creative Commons" style="border-width:0" src="Cc-by-nc-sa_icon.png" /></a>
+<img alt="Licence Creative Commons" style="border-width:0" src="../assets/Cc-by-nc-sa_icon.png" /></a>
 
 
 

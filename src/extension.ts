@@ -9,7 +9,8 @@
 // # 20250623 - DELFOSSE AURORE ON7AUR - 0.0.2 - Params in settings (path to gpg and key id)
 // # 20250624 - DELFOSSE AURORE ON7AUR - 0.0.3 - Convert \<encrypted> tags to \<div style="display: none">
 // # 20250625 - DELFOSSE AURORE ON7AUR - 0.0.4 - Documentation improvement... 
-// # 20250626 - DELFOSSE AURORE ON7AUR - 0.0.5 - Readme in french + sponsoring
+// # 20250626 - DELFOSSE AURORE ON7AUR - 0.1.0 - Readme in french + sponsoring
+// # 20250626 - DELFOSSE AURORE ON7AUR - 0.1.1 - German+Dutch+Espñol+zh-tw+zh-cn+ja-jp
 // # ###########################################################################################################
 
 import * as vscode from 'vscode';

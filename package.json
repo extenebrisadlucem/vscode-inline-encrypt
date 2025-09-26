@@ -2,7 +2,7 @@
   "name": "vscode-inline-encrypt",
   "displayName": "VSCode Inline Encrypt",
   "publisher": "on7aur",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.75.0"
   },
