@@ -2,19 +2,18 @@ vscode-inline-encrypt
 ==========
 
 ## Table of Contents  
-[Introduction](README.md#Introduction)  
-[Sponsors](README.md#Sponsors)  
-[Documentation](README.md#documentation)
-  [Installation](README.md#installation)
-  [Usage](README.md#usage)
-    [Settings](README.md#settings)
-[Changelog](README.md#changelog)
-[Licence](README.md#licence)
-
+- [Introduction](README.md#Introduction)  
+- [Sponsors](README.md#Sponsors)  
+- [Documentation](README.md#documentation)
+  - [Installation](README.md#installation)
+  - [Usage](README.md#usage)
+    - [Settings](README.md#settings)
+- [Changelog](README.md#changelog)
+- [Licence](README.md#licence)
 
 ---
 
-![demo](assets/image.png)
+![demo](assets/capture.gif)
 
 &nbsp;
 
@@ -33,11 +32,11 @@ Typical use cases:
 ## Sponsors
 This project is community-driven.  
 If you find it useful and want to support further development, consider:
-- :beers: [Support via PayPal](https://paypal.me/on7aur)
+- :beers: [Support via PayPal](https://www.paypal.com/donate/?hosted_button_id=59CQFU7TNSWP2)
 - Submitting PRs and improvements
 - Sharing feedback via GitHub Issues
 
-[<img src="assets/paypal-qr.png" width="50"/>](assets/paypal-qr.png)  
+[<img src="assets/don_paypal.png" width="50"/>](assets/don_paypal.png)  
 
 
 ---
