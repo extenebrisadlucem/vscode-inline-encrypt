@@ -9,8 +9,11 @@ vscode-inline-encrypt
     - [GPG-opmerking](#gpg-opmerking)
   - [Gebruik](#gebruik)
     - [Instellingen](#instellingen)
+- [Beveiligingsgaranties](#beveiligingsgaranties)
+  - [Beperkingen van de beveiliging](#beperkingen-van-de-beveiliging)
+  - [Wettelijke verantwoordelijkheden](#wettelijke-verantwoordelijkheden)
 - [Versies](#versies)
-- [Licentie](README.md#licentie)
+- [Licentie](#licentie)
 
 ---
 
@@ -100,6 +103,33 @@ Voorbeeld `settings.json`:
   "inlineEncrypt.keyId": "0x158B2252"
 }
 ```
+---
+
+# Beveiligingsgaranties
+
+Deze extensie verzamelt **geen enkele gegevens**, van welke aard dan ook. Dit is de enige harde garantie die ik kan geven.
+
+De extensie neemt gewoon de geselecteerde tekst, versleutelt of ontsleutelt deze in het geheugen via **GnuPG**, en vervangt vervolgens de inhoud.
+Met andere woorden: het is in wezen een macro die al het werk aan GPG overlaat.
+
+## Beperkingen van de beveiliging
+
+* Als uw systeem is gecompromitteerd (trojan, keylogger, rootkit, enz.), **heeft de extensie geen manier om dit te detecteren of te blokkeren**.
+* Versleuteling is niet absoluut: het verbergt informatie slechts voor een bepaalde tijd. Elk algoritme kan theoretisch worden gekraakt, maar met de huidige middelen (2025) is het kraken van RSA 2048 onrealistisch voor een "standaard" aanvaller.
+* U bent als enige verantwoordelijk voor het back-uppen van uw GPG-sleutels. De extensie vertrouwt volledig op uw GnuPG-installatie en bevat geen sleutelbeheermechanisme.
+
+## Wettelijke verantwoordelijkheden
+
+* In sommige landen wordt sterke versleuteling gereguleerd of zelfs als wapen beschouwd (zoals ooit in de VS het geval was). **Controleer de wetgeving in uw land voordat u het gebruikt.**
+* In het geval van een gerechtelijk onderzoek kan een rechtbank u verplichten uw sleutels te verstrekken om uw gegevens te ontsleutelen. Als u dit niet kunt, kan uw juridische situatie aanzienlijk verergeren.
+
+&nbsp;
+
+⚠️ **Kortom:** de extensie is slechts een eenvoudige tussenlaag naar GnuPG. Ze beschermt uw systeem niet, beheert uw sleutels niet en heeft geen magische kracht tegen een gecompromitteerde machine.
+
+&nbsp;
+
+---
 
 # Versies
 

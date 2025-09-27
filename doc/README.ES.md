@@ -9,8 +9,11 @@ vscode-inline-encrypt
     - [Nota GPG](#nota-gpg)
   - [Uso](#uso)
     - [Configuración](#configuración)
+- [Garantías de seguridad](#garantías-de-seguridad)
+  - [Limitaciones de seguridad](#limitaciones-de-seguridad)
+  - [Responsabilidades legales](#responsabilidades-legales)
 - [Versiones](#versiones)
-- [Licencia](README.md#licencia)
+- [Licencia](#licencia)
 
 ---
 
@@ -100,6 +103,33 @@ Ejemplo `settings.json`:
   "inlineEncrypt.keyId": "0x158B2252"
 }
 ```
+---
+
+# Garantías de seguridad
+
+Esta extensión no recopila **ningún dato** de ningún tipo. Esta es la única garantía firme que puedo proporcionarle.
+
+La extensión simplemente toma el texto seleccionado, lo cifra o descifra en memoria mediante **GnuPG**, y luego reemplaza el contenido.
+En otras palabras: es esencialmente una macro que delega todo el trabajo a GPG.
+
+## Limitaciones de seguridad
+
+* Si su sistema está comprometido (troyano, keylogger, rootkit, etc.), **la extensión no tiene forma de detectarlo o bloquearlo**.
+* El cifrado no es absoluto: solo oculta la información durante un período de tiempo determinado. Todo algoritmo puede romperse teóricamente, pero con los medios actuales (2025), romper RSA 2048 es irrealista para un atacante "estándar".
+* Usted es el único responsable de realizar copias de seguridad de sus claves GPG. La extensión depende completamente de su instalación de GnuPG y no incluye ningún mecanismo de gestión de claves.
+
+## Responsabilidades legales
+
+* En algunos países, el cifrado fuerte está regulado o incluso se considera un arma (como fue el caso en los Estados Unidos). **Verifique las leyes de su país antes de usarlo.**
+* En caso de una investigación judicial, un tribunal puede obligarle a proporcionar sus claves para descifrar sus datos. No hacerlo puede agravar considerablemente su situación legal.
+
+&nbsp;
+
+⚠️ **En resumen:** la extensión es un simple intermediario hacia GnuPG. No protege su sistema, no gestiona sus claves y no tiene poderes mágicos frente a una máquina comprometida.
+
+&nbsp;
+
+---
 
 # Versiones
 

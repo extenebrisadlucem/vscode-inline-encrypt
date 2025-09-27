@@ -3,7 +3,7 @@
   "displayName": "VSCode Inline Encrypt",
   "publisher": "on7aur",
   "icon": "assets/logo.png",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -29,12 +29,12 @@
         "inlineEncrypt.gpgPath": {
           "type": "string",
           "default": "gpg",
-          "description": "Chemin vers le binaire GPG"
+          "description": "path to your GPG binary (i.e.: /usr/bin/gpg)"
         },
         "inlineEncrypt.keyId": {
           "type": "string",
           "default": "",
-          "description": "ID de la clé à utiliser pour chiffrer/déchiffrer"
+          "description": "ID of your gpg key to use to encrypt / decrypt "
         }
       }
     }
@@ -52,5 +52,20 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/extenebrisadlucem/vscode-inline-encrypt"
-  }
+  },
+  "categories": [
+    "Other",
+    "Security"
+  ],
+  "keywords": [
+    "gpg",
+    "pgp",
+    "encryption",
+    "decryption",
+    "cryptography",
+    "security",
+    "privacy",
+    "openpgp",
+    "tools"
+  ]
 }

@@ -9,6 +9,9 @@ vscode-inline-encrypt
     - [Note GPG](#note-gpg)
   - [Utilisation](#utilisation)
     - [Paramètres](#paramètres)
+- [Garanties de sécurité](#garanties-de-sécurité)
+  - [Limites de sécurité](#limites-de-sécurité)
+  - [Responsabilités légales](#responsabilités-légales)
 - [Versions](#versions)
 - [Licence](#licence)
 
@@ -95,6 +98,31 @@ Exemple `settings.json`:
   "inlineEncrypt.keyId": "0x158B2252"
 }
 ```
+---
+
+# Garanties de sécurité
+
+Cette extension ne collecte **aucune donnée**, quelle qu’en soit la nature. C’est la seule garantie ferme que je peux vous fournir.
+
+L’extension se contente de prendre le texte sélectionné, de le chiffrer ou déchiffrer en mémoire via **GnuPG**, puis de remplacer le contenu.  
+En d’autres termes : c’est essentiellement une macro qui délègue tout le travail à GPG.  
+
+## Limites de sécurité
+- Si votre système est compromis (trojan, keylogger, rootkit, etc.), **l’extension n’a aucun moyen de le détecter ou de le bloquer**.  
+- Le chiffrement n’est pas absolu : il ne fait que masquer l’information pendant un temps donné. Tout algorithme finit théoriquement par être cassé, mais avec les moyens actuels (2025), casser une clé RSA 2048 reste irréaliste pour un attaquant « standard ».  
+- Vous êtes seul responsable de la sauvegarde de vos clés GPG. L’extension s’appuie entièrement sur votre installation GnuPG et n’inclut aucun mécanisme de gestion des clés.  
+
+## Responsabilités légales
+- Dans certains pays, le chiffrement fort est soumis à réglementation, voire considéré comme une arme (comme ce fut le cas aux États-Unis). **Renseignez-vous sur la législation de votre pays avant utilisation.**  
+- En cas d’enquête judiciaire, un tribunal peut vous contraindre à fournir vos clés pour déchiffrer vos données. Ne pas être en mesure de le faire peut aggraver votre situation légale.  
+
+&nbsp;
+
+⚠️ **En résumé :** l’extension est un simple intermédiaire vers GnuPG. Elle ne protège pas votre machine, ne gère pas vos clés, et n’a aucun pouvoir magique face à un système compromis.
+
+&nbsp;
+
+---
 
 # Versions
 Voir [CHANGELOG.md](changelog.md) pour l'historique des versions.

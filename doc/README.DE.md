@@ -9,8 +9,11 @@ vscode-inline-encrypt
     - [GPG-Hinweis](#gpg-hinweis)
   - [Verwendung](#verwendung)
     - [Einstellungen](#einstellungen)
+- [Sicherheitsgarantien](#sicherheitsgarantien)
+  - [Sicherheitsbeschränkungen](#sicherheitsbeschränkungen)
+  - [Rechtliche Verantwortlichkeiten](#rechtliche-verantwortlichkeiten)
 - [Versionen](#versionen)
-- [Lizenz](README.md#lizenz)
+- [Lizenz](#lizenz)
 
 ---
 
@@ -100,6 +103,31 @@ Beispiel `settings.json`:
   "inlineEncrypt.keyId": "0x158B2252"
 }
 ```
+---
+
+# Sicherheitsgarantien
+
+Diese Erweiterung sammelt **keine Daten** jeglicher Art. Dies ist die einzige verbindliche Garantie, die ich geben kann.
+
+Die Erweiterung nimmt lediglich den ausgewählten Text, verschlüsselt oder entschlüsselt ihn im Speicher mit **GnuPG** und ersetzt anschließend den Inhalt.
+Mit anderen Worten: Es handelt sich im Wesentlichen um ein Makro, das die gesamte Arbeit an GPG delegiert.
+
+## Sicherheitsbeschränkungen
+
+* Wenn Ihr System kompromittiert ist (Trojaner, Keylogger, Rootkit usw.), **hat die Erweiterung keine Möglichkeit, dies zu erkennen oder zu blockieren**.
+* Verschlüsselung ist nicht absolut: Sie verbirgt Informationen nur für eine bestimmte Zeit. Jedes Verfahren kann theoretisch gebrochen werden, aber mit den heutigen Mitteln (2025) ist das Knacken von RSA 2048 für einen „normalen“ Angreifer unrealistisch.
+* Sie sind allein verantwortlich für die Sicherung Ihrer GPG-Schlüssel. Die Erweiterung stützt sich vollständig auf Ihre GnuPG-Installation und enthält keinen Mechanismus zur Schlüsselverwaltung.
+
+## Rechtliche Verantwortlichkeiten
+
+* In einigen Ländern ist starke Verschlüsselung reguliert oder sogar als Waffe eingestuft (wie es früher in den USA der Fall war). **Prüfen Sie die Gesetzeslage in Ihrem Land vor der Nutzung.**
+* Im Falle einer gerichtlichen Untersuchung kann ein Gericht Sie zwingen, Ihre Schlüssel zur Entschlüsselung Ihrer Daten bereitzustellen. Wenn Sie dies nicht tun können, kann sich Ihre rechtliche Situation erheblich verschärfen.
+
+&nbsp;
+
+⚠️ **Kurz gesagt:** Die Erweiterung ist nur ein einfacher Vermittler zu GnuPG. Sie schützt Ihr System nicht, verwaltet keine Schlüssel und hat keine magischen Kräfte gegen ein kompromittiertes System.
+
+---
 
 # Versionen
 

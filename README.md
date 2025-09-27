@@ -100,6 +100,33 @@ Example `settings.json`:
   "inlineEncrypt.keyId": "0x158B2252"
 }
 ```
+---
+
+# Security Guarantees
+
+This extension does not collect **any data** of any kind. This is the only firm guarantee I can provide.
+
+The extension simply takes the selected text, encrypts or decrypts it in memory using **GnuPG**, and then replaces the content.
+In other words: it is essentially a macro that delegates all the work to GPG.
+
+## Security Limitations
+
+* If your system is compromised (trojan, keylogger, rootkit, etc.), **the extension has no way to detect or block it**.
+* Encryption is not absolute: it only hides information for a given period of time. Every algorithm can theoretically be broken, but with current means (2025), breaking RSA 2048 is unrealistic for a "standard" attacker.
+* You are solely responsible for backing up your GPG keys. The extension relies entirely on your GnuPG installation and does not include any key management mechanism.
+
+## Legal Responsibilities
+
+* In some countries, strong encryption is regulated or even considered a weapon (as was once the case in the United States). **Check the laws of your country before use.**
+* In the event of a judicial investigation, a court may compel you to provide your keys to decrypt your data. Failing to do so can significantly aggravate your legal situation.
+
+&nbsp;
+
+⚠️ **In summary:** the extension is a simple intermediary to GnuPG. It does not protect your system, does not manage your keys, and has no magical power against a compromised machine.
+
+&nbsp;
+
+---
 
 # Versions
 
