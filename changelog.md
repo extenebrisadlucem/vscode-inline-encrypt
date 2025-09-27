@@ -8,3 +8,5 @@
 1.0.0 : 20250926 - DELFOSSE AURORE ON7AUR - Readme in DE-NL-ES-zh_tw-zh_cn-ja_jp
 1.0.1 : 20250926 - DELFOSSE AURORE ON7AUR - Icon and market place azure
 1.0.2 : 20250927 - DELFOSSE AURORE ON7AUR - Remark in readme about security garanties
+1.0.3 : 20250927 - DELFOSSE AURORE ON7AUR - forgot the legal link in english version of table of content \o/ gné!
+

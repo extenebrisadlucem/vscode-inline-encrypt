@@ -3,7 +3,7 @@
   "displayName": "VSCode Inline Encrypt",
   "publisher": "on7aur",
   "icon": "assets/logo.png",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -54,8 +54,7 @@
     "url": "https://github.com/extenebrisadlucem/vscode-inline-encrypt"
   },
   "categories": [
-    "Other",
-    "Security"
+    "Other"
   ],
   "keywords": [
     "gpg",

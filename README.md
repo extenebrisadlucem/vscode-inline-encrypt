@@ -9,6 +9,9 @@ vscode-inline-encrypt
     - [GPG Note](#gpg-note)
   - [Usage](#usage)
     - [Settings](#settings)
+- [Security Guarantees](#security-guarantees)
+  - [Security Limitations](#security-limitations)
+  - [Legal Responsibilities](#legal-responsibilities)
 - [Versions](#versions)
 - [License](#license)
 
